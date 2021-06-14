@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+}
+
+h1{
+    font-weight: 100;
+    font-size: 4em;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #54E6AF;
+}
+
+h1 span {
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #101824;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* border: 5px solid green; */
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    box-sizing: border-box;
+    margin-left: 200px;
+    position: relative;
+    /* border: 5px solid red; */
+}
+
+.main_content{
+    color: white;
+    height: 600px;
+    width: 160%;
+    background-color: #101824;
+    position: absolute;
+    bottom: 110px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 5px solid white; */
+}
+
+.main_content p{
+    width: 540px;
+    font-size: 20px;
+    opacity: .5;
+    line-height: 1.5;
+}
+
+.input{
+    background-color: rgba(138, 143, 192, 0.23);
+    width: 500px;
+    border-radius: 40px;
+    display: flex;
+    justify-self: space-between;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.input input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 20px;
+}
+
+.input button{
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-weight: bold;
+    background-color: #54E6AF;
+    cursor: pointer;
+}
+
+.input:focus-within{
+    box-shadow: 0 0 5 px black;
+}
+
+.input button:hover{
+    background-color: #90f7cf;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.attribution img{
+    margin-right: 40px;
+    align-items: center;
+}
+
+.hero{
+    width: 55%;
+    max-height: 100vh;
+    position: relative;
+    /* border: 5px solid purple; */
+}
+
+.hero_image{
+    width: 100%;
+}
+
+#dots{
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+}
+
+/* sidebar */
+
+.sidebar{
+    height: 100vh;
+    background: black;
+    /* width: 80px; */
+    padding: 30px 10px;
+    color: white;
+    font-size: larger;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    margin-top: 30px;
+    padding: 0 20px;   
+}
+
+.sidebar ul li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover{
+    color: grey
+}
+
+/* dashboard */
+
+.dashboard__main{
+    /* background-color: rgba(138, 143, 192, 0.23); */
+    color: white;
+    height: 100%;
+    flex: 1;
+    padding: 35px;
+}
+
+button{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .3s ease;   
+}
+
+button:hover{
+    color: #2c3348;
+    background-color: #54E6AF;
+}
+
+.featured__container{
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+}
+
+.featured{
+    display: flex;
+    align-items: center;
+    background: rgba(138, 143, 192, 0.23);
+    border-radius: 20px;
+    /* overflow: hidden; */
+    height: 300px;
+}
+
+.featured img{
+    border-radius: 20px;
+}
+
+.featured div{
+    width: 100%;
+    padding: 40px;
+    line-height: 2;
+    font-size: 1.1em;
+}
+
+.featured div h4{
+    opacity: .6;
+}
+
+/* latest */
+
+.latest h2{
+    font-size: 2.2em;
+}
+
+#shows{
+    display: flex;
+    maring-top: 20 px;
+}
+
+.show{
+    background: rgba(138, 143, 192, 0.23);
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 2;
+    cursor: pointer;
+    transition: background .4s ease;
+}
+
+.show:hover{
+    background: rgba(138, 143, 192, 0.53);
+}
+
+.show h5{
+    opacity: .6;
+}
+
+.show img{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
